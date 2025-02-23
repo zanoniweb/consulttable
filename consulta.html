@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEÇÃO NUMISMÁTICA ZANONI: ÁREA DE CONSULTA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sistema de Consulta de Moedas: Coleção Numismática Zanoni</h2>
+        <select id="tabelaSelect" onchange="exibirTabela()">
+            <option value="">Selecione uma Tabela</option>
+            <option value="cobre">Moedas de Cobre do Brasil</option>
+            <option value="prata">Moedas de Prata do Brasil</option>
+            <option value="bronze">Moedas de Bronze do Brasil</option>
+            <option value="niquel">Moedas de Níquel do Brasil</option>
+            <option value="outros">Moedas de Outros Planos Monetários</option>
+            <option value="real">Moedas Comuns do Plano Real</option>
+            <option value="escassas">Moedas Escassas do Plano Real</option>
+            <option value="anomalas">Moedas Anômalas do Plano Real</option>
+            <option value="duplos">Moedas Cunhos Duplos do Plano Real</option>
+        </select>
+        
+          <!--INICIO DO CÓDIGO DOS BOTÕES-->
+          <button onclick="buscarDados()">Pesquisar</button> <!-- Correção da função -->
+          <button onclick="logout()">Sair</button>
+          <button class="chat-button" id="btnOrientacoes">Orientações</button>
+          <!-- FINAL DO CÓDIGO DOS BOTÕES-->
+ 
+    </div>
+
+    <h2>Resultado da Pesquisa</h2>
+
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Data</th>
+                <th>Facial</th>
+                <th>Estado</th>
+                <th>Detalhes</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+    </table>
+
+    <!--INICIO DO CÓDIGO DO BOTÃO DE ORIENTAÇÕES-->
+
+<div id="manual" class="manual">
+    <button class="chat-button" id="btnFechar">✖</button>
+    <h2>Explicação do Coleção Inventáriada</h2>
+    <ul>
+        <li>✔ Passo 1: </li>
+        <li>✔ Passo 2: </li>
+        <li>✔ Passo 3: </li>
+        <li>✔ Passo 4: </li>
+        <li>✔ Passo 5: </li> 
+        <li>✔ Passo 6: </li>
+        <li>✔ Passo 7: </li>
+    </ul>
+</div>
+<!-- Final DO CÓDIGO DO BOTÃO DE ORIENTAÇÕES-->
+
+
+    <script src="script.js"></script>
+
+    <center>
+        <i>
+        <footer>
+            <p>Site desenvolvido por Juliano <img src="https://d1yei2z3i6k35z.cloudfront.net/6946809/65e45ac72773e_zanoni.1.png" alt="Logo de Juliano Zanoni"></p>
+        </footer>
+        </i>
+    </center>
+
+
+</body>
+</html>
