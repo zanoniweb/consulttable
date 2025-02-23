@@ -29,13 +29,13 @@ function logout() {
 
 // Função para carregar as tabelas do diretório "tabelas/"
 async function buscarDados() {
-    const tabelaSelecionada = document.getElementById('tabelaSelect').value;
+    const tabelaSelecionada = document.getElementById("seletor-tabela").value; 
     if (!tabelaSelecionada) {
         alert("Selecione uma tabela antes de pesquisar.");
         return;
     }
 
-    const url = `tabelas/${tabelaSelecionada}.xlsx`; // Caminho correto do arquivo
+    const url = `tabelas/${tabelaSelecionada}.xlsx`; 
 
     try {
         const response = await fetch(url);
@@ -46,13 +46,14 @@ async function buscarDados() {
         const worksheet = workbook.Sheets[workbook.SheetNames[0]];
         const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
 
-        let resultados = json.slice(1).map(row => ({
-            numero: row[0] || 'N/A',
-            data: row[1] || 'N/A',
-            facial: row[2] || 'N/A',
-            estado: row[3] || 'N/A',
-            detalhes: row[4] || 'N/A',
-            valor: row[5] || 'N/A'
+        // Convertendo os dados da planilha para um array de objetos
+        const resultados = json.slice(1).map(row => ({
+            numero: row[0],
+            data: row[1],
+            facial: row[2],
+            estado: row[3],
+            detalhes: row[4],
+            valor: row[5]
         }));
 
         exibirResultados(resultados);
@@ -62,6 +63,7 @@ async function buscarDados() {
     }
 }
 
+// Função para exibir os resultados na tabela
 function exibirResultados(resultados) {
     const tableBody = document.querySelector('#resultTable tbody');
     tableBody.innerHTML = '';
@@ -72,9 +74,7 @@ function exibirResultados(resultados) {
     }
 
     resultados.forEach(resultado => {
-
-        const tableBody = document.querySelector('#resultTable tbody');
-
+        const row = document.createElement("tr");
         row.innerHTML = `
             <td>${resultado.numero}</td>
             <td>${resultado.data}</td>
@@ -88,13 +88,18 @@ function exibirResultados(resultados) {
 }
 
 // BOTÃO DE ORIENTAÇÃO
-document.getElementById("btnOrientacoes").addEventListener("click", function () {
-    document.getElementById("manual").classList.toggle("ativo");
-});
+const btnOrientacoes = document.getElementById("btnOrientacoes");
+if (btnOrientacoes) {
+    btnOrientacoes.addEventListener("click", function () {
+        document.getElementById("manual").classList.toggle("ativo");
+    });
+}
 
-
-document.getElementById("btnFechar").addEventListener("click", function () {
-    document.getElementById("manual").classList.remove("ativo");
-});
+const btnFechar = document.getElementById("btnFechar");
+if (btnFechar) {
+    btnFechar.addEventListener("click", function () {
+        document.getElementById("manual").classList.remove("ativo");
+    });
+}
 
 
