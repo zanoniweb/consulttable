@@ -80,5 +80,6 @@ th, td {
 }
 
 .manual.ativo {
-    right: 0; /* Aparece na tela */ 
+    right: 0 !important; /* Garante que o painel do manual apareça */
 } /* Final do código do botão de orientação */
+

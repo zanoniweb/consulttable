@@ -9,7 +9,8 @@
 <body>
     <div class="container">
         <h2>Sistema de Consulta de Moedas: Coleção Numismática Zanoni</h2>
-        <select id="tabelaSelect" onchange="exibirTabela()">
+        <select id="tabelaSelect" onchange="buscarDados()">
+
             <option value="">Selecione uma Tabela</option>
             <option value="cobre">Moedas de Cobre do Brasil</option>
             <option value="prata">Moedas de Prata do Brasil</option>
@@ -20,6 +21,7 @@
             <option value="escassas">Moedas Escassas do Plano Real</option>
             <option value="anomalas">Moedas Anômalas do Plano Real</option>
             <option value="duplos">Moedas Cunhos Duplos do Plano Real</option>
+
         </select>
         
           <!--INICIO DO CÓDIGO DOS BOTÕES-->
@@ -32,6 +34,7 @@
 
     <h2>Resultado da Pesquisa</h2>
 
+
     <table id="resultTable">
         <thead>
             <tr>
@@ -43,7 +46,11 @@
                 <th>Valor</th>
             </tr>
         </thead>
+        <tbody> <!-- Adicionado para exibir os resultados corretamente -->
+        </tbody>
     </table>
+    
+
 
     <!--INICIO DO CÓDIGO DO BOTÃO DE ORIENTAÇÕES-->
 

@@ -72,7 +72,9 @@ function exibirResultados(resultados) {
     }
 
     resultados.forEach(resultado => {
-        const row = document.createElement('tr');
+
+        const tableBody = document.querySelector('#resultTable tbody');
+
         row.innerHTML = `
             <td>${resultado.numero}</td>
             <td>${resultado.data}</td>
@@ -87,8 +89,9 @@ function exibirResultados(resultados) {
 
 // BOTÃO DE ORIENTAÇÃO
 document.getElementById("btnOrientacoes").addEventListener("click", function () {
-    document.getElementById("manual").classList.add("ativo");
+    document.getElementById("manual").classList.toggle("ativo");
 });
+
 
 document.getElementById("btnFechar").addEventListener("click", function () {
     document.getElementById("manual").classList.remove("ativo");
