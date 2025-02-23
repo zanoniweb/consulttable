@@ -29,13 +29,14 @@ function logout() {
 
 // Função para carregar as tabelas do diretório "tabelas/"
 async function buscarDados() {
-    const tabelaSelecionada = document.getElementById("seletor-tabela").value; 
+    const tabelaSelecionada = document.getElementById("tabelaSelecionada").value;
+    
     if (!tabelaSelecionada) {
         alert("Selecione uma tabela antes de pesquisar.");
         return;
     }
 
-    const url = `tabelas/${tabelaSelecionada}.xlsx`; 
+    const url = `tabelas/${tabelaSelecionada}.xlsx`;
 
     try {
         const response = await fetch(url);
@@ -46,14 +47,18 @@ async function buscarDados() {
         const worksheet = workbook.Sheets[workbook.SheetNames[0]];
         const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
 
-        // Convertendo os dados da planilha para um array de objetos
+        if (json.length < 2) {
+            alert("A planilha selecionada não contém dados.");
+            return;
+        }
+
         const resultados = json.slice(1).map(row => ({
-            numero: row[0],
-            data: row[1],
-            facial: row[2],
-            estado: row[3],
-            detalhes: row[4],
-            valor: row[5]
+            numero: row[0] || "-",
+            data: row[1] || "-",
+            facial: row[2] || "-",
+            estado: row[3] || "-",
+            detalhes: row[4] || "-",
+            valor: row[5] || "-"
         }));
 
         exibirResultados(resultados);
@@ -88,18 +93,19 @@ function exibirResultados(resultados) {
 }
 
 // BOTÃO DE ORIENTAÇÃO
-const btnOrientacoes = document.getElementById("btnOrientacoes");
-if (btnOrientacoes) {
-    btnOrientacoes.addEventListener("click", function () {
-        document.getElementById("manual").classList.toggle("ativo");
-    });
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const btnOrientacoes = document.getElementById("btnOrientacoes");
+    const btnFechar = document.getElementById("btnFechar");
+    const manual = document.getElementById("manual");
 
-const btnFechar = document.getElementById("btnFechar");
-if (btnFechar) {
-    btnFechar.addEventListener("click", function () {
-        document.getElementById("manual").classList.remove("ativo");
-    });
-}
+    if (btnOrientacoes && btnFechar && manual) {
+        btnOrientacoes.addEventListener("click", () => {
+            manual.classList.toggle("ativo");
+        });
 
+        btnFechar.addEventListener("click", () => {
+            manual.classList.remove("ativo");
+        });
+    }
+});
 

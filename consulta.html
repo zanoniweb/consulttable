@@ -9,8 +9,9 @@
 <body>
     <div class="container">
         <h2>Sistema de Consulta de Moedas: Coleção Numismática Zanoni</h2>
-        <select id="tabelaSelecionada" onchange="buscarDados()">
-
+        
+       <select id="tabelaSelecionada" onchange="buscarDados()">
+        
             <option value="">Selecione uma Tabela</option>
             <option value="cobre">Moedas de Cobre do Brasil</option>
             <option value="prata">Moedas de Prata do Brasil</option>
@@ -24,6 +25,7 @@
 
         </select>
         
+
           <!--INICIO DO CÓDIGO DOS BOTÕES-->
           <button onclick="buscarDados()">Pesquisar</button> <!-- Correção da função -->
           <button onclick="logout()">Sair</button>

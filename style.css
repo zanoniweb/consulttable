@@ -51,7 +51,7 @@ th, td {
     padding: 8px;
 }
 
-/* Início do código do botão de orientação */
+/* Estilização do manual lateral */
 .manual {
     position: fixed;
     top: 0;
@@ -64,6 +64,12 @@ th, td {
     transition: right 0.3s ease-in-out;
     overflow-y: auto; /* Adiciona barra de rolagem vertical */
     overflow-x: hidden; /* Evita rolagem horizontal */
+    display: none; /* Inicialmente oculto */
+}
+
+.manual.ativo {
+    right: 0 !important; /* Garante que o painel do manual apareça */
+    display: block; /* Garante exibição quando ativo */
 }
 
 .manual h2 {
@@ -79,7 +85,35 @@ th, td {
     margin-bottom: 10px;
 }
 
-.manual.ativo {
-    right: 0 !important; /* Garante que o painel do manual apareça */
-} /* Final do código do botão de orientação */
+/* Estilização do manual modal centralizado */
+.manual.modal {
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: auto;
+    max-height: 80vh;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
 
+.manual.modal.ativo {
+    display: block;
+}
+
+/* Botão de abrir manual */
+.chat-button {
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.chat-button:hover {
+    background: #0056b3;
+}
