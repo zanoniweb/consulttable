@@ -1,58 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COLEÇÃO NUMISMÁTICA ZANONI: ÁREA DE CONSULTA</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Tabelas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Sistema de Consulta de Moedas: Coleção Numismática Zanoni</h2>
-        
-       <select id="tabelaSelecionada" onchange="buscarDados()">
-        
-            <option value="">Selecione uma Tabela</option>
-            <option value="cobre">Moedas de Cobre do Brasil</option>
-            <option value="prata">Moedas de Prata do Brasil</option>
-            <option value="bronze">Moedas de Bronze do Brasil</option>
-            <option value="niquel">Moedas de Níquel do Brasil</option>
-            <option value="outros">Moedas de Outros Planos Monetários</option>
-            <option value="real">Moedas Comuns do Plano Real</option>
-            <option value="escassas">Moedas Escassas do Plano Real</option>
-            <option value="anomalas">Moedas Anômalas do Plano Real</option>
-            <option value="duplos">Moedas Cunhos Duplos do Plano Real</option>
-
-        </select>
-        
-
-          <!--INICIO DO CÓDIGO DOS BOTÕES-->
-          <button onclick="buscarDados()">Pesquisar</button> <!-- Correção da função -->
-          <button onclick="logout()">Sair</button>
-          <button class="chat-button" id="btnOrientacoes">Orientações</button>
-          <!-- FINAL DO CÓDIGO DOS BOTÕES-->
- 
-    </div>
-
-    <h2>Resultado da Pesquisa</h2>
-
-
-    <table id="resultTable">
-        <thead>
-            <tr>
-                <th>Número</th>
-                <th>Data</th>
-                <th>Facial</th>
-                <th>Estado</th>
-                <th>Detalhes</th>
-                <th>Valor</th>
-            </tr>
-        </thead>
-        <tbody> <!-- Adicionado para exibir os resultados corretamente -->
-        </tbody>
+  <h1>Consulta de Tabelas</h1>
+  <form id="searchForm">
+    <label for="tableName">Nome da Tabela:</label>
+    <input type="text" id="tableName" name="tableName" required>
+    <button type="submit">Pesquisar</button>
+  </form>
+  <div id="results">
+    <table>
+      <thead>
+        <tr>
+          <th>Resultado</th>
+          <th>Data</th>
+          <th>Facial</th>
+          <th>Estado</th>
+          <th>Detalhes</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody">
+        <!-- Os resultados serão inseridos aqui -->
+      </tbody>
     </table>
-    
-
+  </div>
 
     <!--INICIO DO CÓDIGO DO BOTÃO DE ORIENTAÇÕES-->
 
@@ -70,10 +47,6 @@
     </ul>
 </div>
 <!-- Final DO CÓDIGO DO BOTÃO DE ORIENTAÇÕES-->
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-
 
     <script src="script.js"></script>
 
