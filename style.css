@@ -1,119 +1,40 @@
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.login-container, .container {
-    background: white;
-    width: 300px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px gray;
+h1 {
+  text-align: center;
 }
 
-input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
+label, input, button {
+  margin: 0 5px;
 }
 
-button:hover {
-    background-color: #218838;
-}
-
-#error-message {
-    color: red;
+#results {
+  display: flex;
+  justify-content: center;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 20px;
 }
 
 th, td {
-    border: 1px solid black;
-    padding: 8px;
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-/* Estilização do manual lateral */
-.manual {
-    position: fixed;
-    top: 0;
-    right: -350px; /* Escondido fora da tela */
-    width: 300px;
-    height: 100vh;
-    background-color: white;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    transition: right 0.3s ease-in-out;
-    overflow-y: auto; /* Adiciona barra de rolagem vertical */
-    overflow-x: hidden; /* Evita rolagem horizontal */
-    display: none; /* Inicialmente oculto */
+th {
+  background-color: #f2f2f2;
+  text-align: left;
 }
 
-.manual.ativo {
-    right: 0 !important; /* Garante que o painel do manual apareça */
-    display: block; /* Garante exibição quando ativo */
-}
-
-.manual h2 {
-    margin-top: 0;
-    font-size: 18px;
-}
-
-.manual ul {
-    padding-left: 20px;
-}
-
-.manual ul li {
-    margin-bottom: 10px;
-}
-
-/* Estilização do manual modal centralizado */
-.manual.modal {
-    display: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: auto;
-    max-height: 80vh;
-    border: 2px solid #000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
-
-.manual.modal.ativo {
-    display: block;
-}
-
-/* Botão de abrir manual */
-.chat-button {
-    cursor: pointer;
-    padding: 10px 15px;
-    background: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.chat-button:hover {
-    background: #0056b3;
-}
