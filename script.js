@@ -28,41 +28,53 @@ function logout() {
 }
 
 // Função para carregar as tabelas do diretório "tabelas/"
-// script.js
-document.getElementById('searchForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const tableName = document.getElementById('tableName').value.toLowerCase();
-  const resultsBody = document.getElementById('resultsBody');
-  resultsBody.innerHTML = '';
-
-  // Simulação de dados das tabelas
-  const tables = {
-    cobre: [
-      { resultado: 'Resultado 1', data: '01/01/2022', facial: 'Facial 1', estado: 'Estado 1', detalhes: 'Detalhes 1', valor: 'Valor 1' },
-      { resultado: 'Resultado 2', data: '02/01/2022', facial: 'Facial 2', estado: 'Estado 2', detalhes: 'Detalhes 2', valor: 'Valor 2' },
-    ],
-    prata: [
-      { resultado: 'Resultado A', data: '03/01/2022', facial: 'Facial A', estado: 'Estado A', detalhes: 'Detalhes A', valor: 'Valor A' },
-      { resultado: 'Resultado B', data: '04/01/2022', facial: 'Facial B', estado: 'Estado B', detalhes: 'Detalhes B', valor: 'Valor B' },
-    ],
-    // Adicione outras tabelas conforme necessário
-  };
-
-  if (tables[tableName]) {
-    tables[tableName].forEach(row => {
-      const tr = document.createElement('tr');
-      for (const key in row) {
-        const td = document.createElement('td');
-        td.textContent = row[key];
-        tr.appendChild(td);
-      }
-      resultsBody.appendChild(tr);
-    });
-  } else {
-    const
-
-// BOTÃO DE ORIENTAÇÃO
 document.addEventListener("DOMContentLoaded", function () {
+    const searchForm = document.getElementById('searchForm');
+    if (searchForm) {
+        searchForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const tableName = document.getElementById('tableName').value.toLowerCase();
+            const resultsBody = document.getElementById('resultsBody');
+            resultsBody.innerHTML = '';
+
+            // Simulação de dados das tabelas
+            const tables = {
+                cobre: [
+                    { resultado: 'Resultado 1', data: '01/01/2022', facial: 'Facial 1', estado: 'Estado 1', detalhes: 'Detalhes 1', valor: 'Valor 1' },
+                    { resultado: 'Resultado 2', data: '02/01/2022', facial: 'Facial 2', estado: 'Estado 2', detalhes: 'Detalhes 2', valor: 'Valor 2' },
+                ],
+                prata: [
+                    { resultado: 'Resultado A', data: '03/01/2022', facial: 'Facial A', estado: 'Estado A', detalhes: 'Detalhes A', valor: 'Valor A' },
+                    { resultado: 'Resultado B', data: '04/01/2022', facial: 'Facial B', estado: 'Estado B', detalhes: 'Detalhes B', valor: 'Valor B' },
+                ],
+                // Adicione outras tabelas conforme necessário
+            };
+
+            if (tables[tableName]) {
+                tables[tableName].forEach(row => {
+                    const tr = document.createElement('tr');
+                    for (const key in row) {
+                        const td = document.createElement('td');
+                        td.textContent = row[key];
+                        tr.appendChild(td);
+                    }
+                    resultsBody.appendChild(tr);
+                });
+            } else {
+                // Exibir mensagem de erro caso a tabela não seja encontrada
+                const tr = document.createElement('tr');
+                const td = document.createElement('td');
+                td.setAttribute('colspan', '6'); // Ajustar para cobrir todas as colunas
+                td.textContent = "Tabela não encontrada!";
+                td.style.color = "red";
+                td.style.textAlign = "center";
+                tr.appendChild(td);
+                resultsBody.appendChild(tr);
+            }
+        });
+    }
+
+    // BOTÃO DE ORIENTAÇÃO
     const btnOrientacoes = document.getElementById("btnOrientacoes");
     const btnFechar = document.getElementById("btnFechar");
     const manual = document.getElementById("manual");
@@ -77,4 +89,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
