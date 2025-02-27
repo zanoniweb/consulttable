@@ -28,69 +28,38 @@ function logout() {
 }
 
 // Função para carregar as tabelas do diretório "tabelas/"
-async function buscarDados() {
-    const tabelaSelecionada = document.getElementById("tabelaSelecionada").value;
-    
-    if (!tabelaSelecionada) {
-        alert("Selecione uma tabela antes de pesquisar.");
-        return;
-    }
+// script.js
+document.getElementById('searchForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const tableName = document.getElementById('tableName').value.toLowerCase();
+  const resultsBody = document.getElementById('resultsBody');
+  resultsBody.innerHTML = '';
 
-    const url = `tabelas/${tabelaSelecionada}.xlsx`;
+  // Simulação de dados das tabelas
+  const tables = {
+    cobre: [
+      { resultado: 'Resultado 1', data: '01/01/2022', facial: 'Facial 1', estado: 'Estado 1', detalhes: 'Detalhes 1', valor: 'Valor 1' },
+      { resultado: 'Resultado 2', data: '02/01/2022', facial: 'Facial 2', estado: 'Estado 2', detalhes: 'Detalhes 2', valor: 'Valor 2' },
+    ],
+    prata: [
+      { resultado: 'Resultado A', data: '03/01/2022', facial: 'Facial A', estado: 'Estado A', detalhes: 'Detalhes A', valor: 'Valor A' },
+      { resultado: 'Resultado B', data: '04/01/2022', facial: 'Facial B', estado: 'Estado B', detalhes: 'Detalhes B', valor: 'Valor B' },
+    ],
+    // Adicione outras tabelas conforme necessário
+  };
 
-    try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`Erro ao carregar: ${url}`);
-
-        const data = await response.arrayBuffer();
-        const workbook = XLSX.read(data, { type: 'array' });
-        const worksheet = workbook.Sheets[workbook.SheetNames[0]];
-        const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
-
-        if (json.length < 2) {
-            alert("A planilha selecionada não contém dados.");
-            return;
-        }
-
-        const resultados = json.slice(1).map(row => ({
-            numero: row[0] || "-",
-            data: row[1] || "-",
-            facial: row[2] || "-",
-            estado: row[3] || "-",
-            detalhes: row[4] || "-",
-            valor: row[5] || "-"
-        }));
-
-        exibirResultados(resultados);
-    } catch (error) {
-        console.error("Erro ao processar:", error);
-        alert("Erro ao buscar os dados. Verifique o console.");
-    }
-}
-
-// Função para exibir os resultados na tabela
-function exibirResultados(resultados) {
-    const tableBody = document.querySelector('#resultTable tbody');
-    tableBody.innerHTML = '';
-
-    if (resultados.length === 0) {
-        tableBody.innerHTML = `<tr><td colspan="6">Nenhum resultado encontrado</td></tr>`;
-        return;
-    }
-
-    resultados.forEach(resultado => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-            <td>${resultado.numero}</td>
-            <td>${resultado.data}</td>
-            <td>${resultado.facial}</td>
-            <td>${resultado.estado}</td>
-            <td>${resultado.detalhes}</td>
-            <td>${resultado.valor}</td>
-        `;
-        tableBody.appendChild(row);
+  if (tables[tableName]) {
+    tables[tableName].forEach(row => {
+      const tr = document.createElement('tr');
+      for (const key in row) {
+        const td = document.createElement('td');
+        td.textContent = row[key];
+        tr.appendChild(td);
+      }
+      resultsBody.appendChild(tr);
     });
-}
+  } else {
+    const
 
 // BOTÃO DE ORIENTAÇÃO
 document.addEventListener("DOMContentLoaded", function () {
