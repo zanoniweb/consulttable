@@ -1143,6 +1143,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["19", "2023", "R$ 1,00", "mbc", "Cunho Marcado - no Reverso (com sinais do anverso)", "R$ 25,00"],
 
                 ],
+
+                anomalas_1: [
+                   
+                    ["1", "1924", "1000 Réis", "mbc", "Carimbo Particular - 1896", "R$ 30,00"],
+                    ["2", "1945", "10 Centavos", "mbc", "Cunho Duplo - Brasil", "R$ 40,00"],
+                    ["3", "1986", "20 Centavos", "sob/fc", "Cunho Duplo - Brasil", "R$ 30,00"],
+                    ["4", "1990", "5 Cruzeiros", "mbc/sob", "Cunho Marcado - no Anvero, ou seja, perto da enxada", "R$ 35,00"],
+                    ["5", "1991", "10 Cruzeiros", "mbc/sob", "Cunho Duplo - Data e linhas", "R$ 20,00"],
+                    ["6", "1992", "500 Cruzeiros", "mbc/sob", "Cunho Marcado - no Reverso", "R$ 30,00"],
+                    ["7", "1992", "500 Cruzeiros", "mbc/sob", "Cunho Marcado - no Reverso, ou seja, com sinais da tartaruga marinha", "R$ 30,00"],
+                    ["8", "1993", "1000 Cruzeiros", "mbc/sob", "Cunho Duplo - Acara e Brasil", "R$ 20,00"],
+                    ["9", "1993", "1000 Cruzeiros", "mbc/sob", "Cunho Duplo - Acara, Brasil e Cruzeiro", "R$ 25,00"],
+
+                ],  
+
                 outros: [
                     ["59", "1920", "20 Réis", "MBC", "Qunatidade de peças cunhadas 825.000", "R$ 20,00"],
                     ["85", "1931", "100 Réis", "MBC", "Qunatidade de peças cunhadas 2.500.000", "R$ 10,00"],
