@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["751", "1832R", "40 Réis c. g. de 20 Réis", "BC", "23 Tulipas, Florões Verticais, Diâmetro: 34 mm, Peso: 14,5 g, Grãos de Café: 12, Folhas de Tabaco: 12", "R$ 60,00"], 
                     ["753", "1832R", "80 Réis", "BC+", "20 Tulipas, Florões Verticais, Diâmetro: 40 mm, Peso: 25,8 g, Grãos de Café: gastas, Folhas de Tabaco: 8, Q.: 6.118.663", "R$ 60,00"],
                     ["754", "1831R", "80 Réis c. g. de 40 Réis", "MBC", "20 Tulipas, Florões Verticais, Diâmetro: 39 mm, Peso: 25,4 g, Grãos de Café: 12, Folhas de Tabaco: 8", "R$ 90,00"], 
-                    ["754", "1831R", "80 Réis c. g. de 40 Réis", "MBC", "20 Tulipas, Florões Oblíquos, Diâmetro: 38 mm, Peso: 27,6 g, Grãos de Café: 12, Folhas de Tabaco: 8", ""], 
+                    ["754", "1831R", "80 Réis c. g. de 40 Réis", "MBC", "20 Tulipas, Florões Oblíquos, Diâmetro: 38 mm, Peso: 27,6 g, Grãos de Café: 12, Folhas de Tabaco: 8", "R$ 90,00"], 
                     ["755", "1832R", "80 Réis c. g. de 40 Réis", "MBC", "19 Tulipas, Florões Oblíquos, Diâmetro: 40 mm, Peso: 27,8 g, Grãos de Café: 11, Folhas de Tabaco: 8", "R$ 70,00"],
                     ["755", "1832R", "80 Réis c. g. de 40 Réis", "MBC", "20 Tulipas, Florões Oblíquos, Diâmetro: 39 mm, Peso: 24,6 g, Grãos de Café: 12, Folhas de Tabaco: 8", "R$ 70,00"], 
                     ["755", "1832R", "80 Réis c. g. de 40 Réis", "BC+", "21 Tulipas, Florões Oblíquos, Diâmetro: 40 mm, Peso: 27,2 g, Grãos de Café: 12, Folhas de Tabaco: 8", "R$ 50,00"], 
@@ -190,6 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["780", "1829 R", "80 Réis com cabimbo Piratini", "BC+", "Revolução Farroupilha, Tulipas: Gastas, Florões gastos, Peso: 26,2 g, Diâmetro: 38,0 mm, Grãos de Café: 12, Folhas de Tabaco: 8", "R$ 3.300,00"], 
                     ["759", "1830 R", "20 Réis com carimbo 10 Cabanagem", "MBC", "Revolução Cabanagem, Tulipas: 24, Florões: Verticais, Peso: 3,8 g, Diâmetro: 30,0 mm, Grãos de Café: 12", "R$ 750,00"],
                 ],
+
                 prata: [
                     ["220", "1782", "80 Réis", "MBC", "D. Maria I", "R$ 450,00"],
                     ["316", "1814B", "960 Réis", "MBC", "D. João VI", "R$ 500,00"],
@@ -326,6 +327,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["723", "1938", "5000 Réis", "MBC", "Qunatidade de peças cunhadas 994.000", "R$ 60,00"],
                     ["723A", "1938", "5000 Réis", "MBC", "CARIMBO SOCIEDADE NUMISMÁTICA", "R$ 500,00"],
                 ],
+
                 bronze: [
                     ["785", "1869", "10 Réis", "SOB", "", "R$ 100,00"],
                     ["787", "1868", "20 Réis", "MBC", "", "R$ 50,00"],
@@ -345,6 +347,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["821", "1897", "40 Réis", "MBC-", "Qunatidade de peças cunhadas 1.26.250", "R$ 25,00"],
                     ["823", "1900", "40 Réis", "MBC", "Qunatidade de peças cunhadas 2.115.000", "R$ 60,00"],
                 ],
+
                 niquel: [
                     ["2", "1871", "100 Réis", "MBC-", "Qunatidade de peças cunhadas 4.000.000", "R$ 50,00"],
                     ["8", "1878", "100 Réis", "BC", "", "R$ 25,00"],
@@ -385,6 +388,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["51", "1898", "200 Réis", "MBC+", "Qunatidade de peças cunhadas 3.925.000", "R$ 30,00"],
                     ["52", "1899", "200 Réis", "MBC-", "Qunatidade de peças cunhadas 2.723.000", "R$ 250,00"],
                 ],
+
                 real: [
                     ["1", "1994", "0,01", "MBC", "Qunatidade de peças cunhadas 817.100.000", "R$ 3,50"],
                     ["2", "1995", "0,01", "MBC", "Qunatidade de peças cunhadas 283.799.000", "R$ 3,50"],
@@ -538,6 +542,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["148", "2019", "1", "FC", "BEIJA FLOR", "R$ 10,00"],
                     ["149", "2024", "1", "FC", "30 ANOS DO REAL", "R$ 10,00"],
                 ],
+
                  escassas: [
                     ["1", "1999", "0,01", "SOB", "Qunatidade de peças cunhadas 104.874.000", "R$ 50,00"],
                     ["2", "2000", "0,01", "SOB", "Qunatidade de peças cunhadas 88.256.000", "R$ 30,00"],
@@ -571,6 +576,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["32", "2012/Ban", "1", "SOB", "Qunatidade de peças cunhadas 2.016.000", "R$ 170,00"],
                     ["33", "2016", "1", "SOB", "Qunatidade de peças cunhadas 25.088.000", "R$ 30,00"],
                 ],
+                
                 duplos: [
                     ["1", "1994", "R$ 0,01", "mbc", "Matriz de cunho duplo - sinal da data no anverso marcada em duplicidade acima da cabeça da república", "R$ 50,00"],
                     ["2", "1995", "R$ 0,01", "mbc", "Cunho duplo – palavra 'Brasil' detalhe visível nas letras: 'b', 'r', 'a', 's', 'i' e 'l'. Cunho marcado – sinal da data no anverso.", "R$ 60,00"],
@@ -904,7 +910,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["331", "2015", "R$ 1,00", "mbc", "Matriz de cunho duplicada (Olimpíadas Futebol) - palavra 'Brasil' detalhe visível nas letras: 'b', 'r', 'a', 's', 'i' e 'l'.", "R$ 50,00"],
                     ["332", "2019", "R$ 1,00", "mbc", "Moeda do Beija Flor (Brasil e detalhes do anverso duplicados)", "R$ 50,00"],
                 ],
-                anomalas: [
+
+                anomalas_1: [
+                   
+                    ["1", "1924", "1000 Réis", "mbc", "Carimbo Particular - 1896", "R$ 30,00"],
+                    ["2", "1945", "10 Centavos", "mbc", "Cunho Duplo - Brasil", "R$ 40,00"],
+                    ["3", "1986", "20 Centavos", "sob/fc", "Cunho Duplo - Brasil", "R$ 30,00"],
+                    ["4", "1990", "5 Cruzeiros", "mbc/sob", "Cunho Marcado - no Anvero, ou seja, perto da enxada", "R$ 35,00"],
+                    ["5", "1991", "10 Cruzeiros", "mbc/sob", "Cunho Duplo - Data e linhas", "R$ 20,00"],
+                    ["6", "1992", "500 Cruzeiros", "mbc/sob", "Cunho Marcado - no Reverso", "R$ 30,00"],
+                    ["7", "1992", "500 Cruzeiros", "mbc/sob", "Cunho Marcado - no Reverso, ou seja, com sinais da tartaruga marinha", "R$ 30,00"],
+                    ["8", "1993", "1000 Cruzeiros", "mbc/sob", "Cunho Duplo - Acara e Brasil", "R$ 20,00"],
+                    ["9", "1993", "1000 Cruzeiros", "mbc/sob", "Cunho Duplo - Acara, Brasil e Cruzeiro", "R$ 25,00"],
+
+                ],
+
+                anomalas_2: [
                     ["1", "1994", "R$ 0,01", "mbc", "Cunho Marcado - Sinal da data no anverso", "R$ 20,00"],
                     ["2", "1994", "R$ 0,01", "mbc", "Reverso Inclinado à Esquerda", "R$ 30,00"],
                     ["3", "1994", "R$ 0,01", "mbc", "Reverso Inclinado à Esquerda e sinal da data no anverso", "R$ 40,00"],
@@ -1143,20 +1164,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["19", "2023", "R$ 1,00", "mbc", "Cunho Marcado - no Reverso (com sinais do anverso)", "R$ 25,00"],
 
                 ],
-
-                anomalas_1: [
-                   
-                    ["1", "1924", "1000 Réis", "mbc", "Carimbo Particular - 1896", "R$ 30,00"],
-                    ["2", "1945", "10 Centavos", "mbc", "Cunho Duplo - Brasil", "R$ 40,00"],
-                    ["3", "1986", "20 Centavos", "sob/fc", "Cunho Duplo - Brasil", "R$ 30,00"],
-                    ["4", "1990", "5 Cruzeiros", "mbc/sob", "Cunho Marcado - no Anvero, ou seja, perto da enxada", "R$ 35,00"],
-                    ["5", "1991", "10 Cruzeiros", "mbc/sob", "Cunho Duplo - Data e linhas", "R$ 20,00"],
-                    ["6", "1992", "500 Cruzeiros", "mbc/sob", "Cunho Marcado - no Reverso", "R$ 30,00"],
-                    ["7", "1992", "500 Cruzeiros", "mbc/sob", "Cunho Marcado - no Reverso, ou seja, com sinais da tartaruga marinha", "R$ 30,00"],
-                    ["8", "1993", "1000 Cruzeiros", "mbc/sob", "Cunho Duplo - Acara e Brasil", "R$ 20,00"],
-                    ["9", "1993", "1000 Cruzeiros", "mbc/sob", "Cunho Duplo - Acara, Brasil e Cruzeiro", "R$ 25,00"],
-
-                ],  
 
                 outros: [
                     ["59", "1920", "20 Réis", "MBC", "Qunatidade de peças cunhadas 825.000", "R$ 20,00"],
