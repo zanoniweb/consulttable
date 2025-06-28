@@ -803,7 +803,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["221", "2003", "R$ 0,25", "mbc", "Cunho duplo - palavra 'Brasil' detalhe visível nas letras: 'b', 'r', 'a', 's', 'i' e 'l'.", "R$ 50,00"],
                     ["222", "2009", "R$ 0,25", "mbc", "Cunho duplo – palavra 'Centavos' detalhe visível nas letras: 'o' e 's'.", "R$ 50,00"],
                     ["223", "2009", "R$ 0,25", "mbc", "Cunho duplo – em 02 'Estrelas' do reverso.", "R$ 50,00"],
-                    ["224", "2010", "R$ 0,25", "mbc", "Matriz de cunho duplicada - palavra 'Brasil' detalhe visível na letra: 'b'", "R$ 50,00"],
+                    ["224", "2010", "R$ 0,25", "mbc", "Matriz de cunho duplicada - palavra 'Brasil' detalhe visível na letra: 'b' e 'r'", "R$ 50,00"],
                     ["225", "2010", "R$ 0,25", "mbc", "Matriz de cunho duplicada - palavra 'Brasil' detalhe visível nas letras: 'b', 'r', 'i' e 'l'.", "R$ 50,00"],
                     ["226", "2010", "R$ 0,25", "mbc", "Cunho duplo - palavra 'Brasil' detalhe visível nas letras: 'b', 'r', 'a', 's', 'i' e 'l'.", "R$ 50,00"],
                     ["227", "2011", "R$ 0,25", "mbc", "Matriz de cunho duplicada - palavra 'Brasil' detalhe visível nas letras: 's', 'i' e 'l'.", "R$ 50,00"],
