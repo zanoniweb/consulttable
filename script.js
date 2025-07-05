@@ -174,6 +174,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["665", "1828B", "80 Réis c. g. de 40 Réis", "BC", "21 Tulipas, Florões Oblíquos, Diâmetro: 41 mm, Peso: 26,4 g, Grãos de Café: 11, Folhas de Tabaco: 8", "R$ 90,00"], 
                     ["666", "1829B", "80 Réis c. g. de 40 Réis", "UTG", "21 Tulipas, Florões Verticais, Diâmetro: 40 mm, Peso: 28,6 g, Grãos de Café: gastos, Folhas de Tabaco: 8", "R$ 45,00"], 
                     ["713", "1828C", "40 Réis c. g. de 10 Réis", "MBC", "24 Tulipas, Florões Verticais, Diâmetro: 29,0 mm, Peso: 5,6 g, Grãos de Café: 11, Folhas de Tabaco: 12", "R$ 250,00"], 
+                    
+                    ["714", "1829C", "40 Réis c. g. de 10 Réis", "BC/MBC", "?? Tulipas, Florões ??, Diâmetro: ??,0 mm, Peso: ?? g, Grãos de Café: ??, Folhas de Tabaco: ??", "R$ 280,00"], 
+                    ["715", "1830C", "40 Réis c. g. de 10 Réis", "MBC", "?? Tulipas, Florões ??, Diâmetro: ??,0 mm, Peso: ?? g, Grãos de Café: ??, Folhas de Tabaco: ??", "R$ 280,00"], 
+                     
                     ["721", "1826C", "80 Réis c. g. de 20 Réis", "MBC", "Tulipas Gastas, Florões Gastos, Diâmetro: 34,0 mm, Peso: 12,7 g, Grãos de Café: Gastos, Folhas de Tabaco: 12", "R$ 550,00"], 
                     ["749", "1832R", "40 Réis", "BC", "24 Tulipas, Florões Oblíquos, Diâmetro: 34 mm, Peso: 14,8 g, Grãos de Café: 12, Folhas de Tabaco: 12", "R$ 90,00"], 
                     ["751", "1832R", "40 Réis c. g. de 20 Réis", "BC", "23 Tulipas, Florões Verticais, Diâmetro: 34 mm, Peso: 14,5 g, Grãos de Café: 12, Folhas de Tabaco: 12", "R$ 60,00"], 
