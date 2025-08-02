@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ],
 
                 prata: [
-                    ["175", "1768", "80 Réis", "BC", "D. José I", "R$ 180,00"],
+                    ["175", "1768", "80 Réis", "BC/MBC", "D. José I", "R$ 180,00"],
                     ["220", "1782", "80 Réis", "MBC", "D. Maria I", "R$ 450,00"],
                     ["316", "1814B", "960 Réis", "MBC", "D. João VI", "R$ 500,00"],
                     ["563", "1850", "500 Réis", "MBC", "Qunatidade de peças cunhadas 66.572", "R$ 180,00"],
@@ -335,6 +335,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["719", "1932", "2000 Réis", "SOB", "", "R$ 100,00"],
                     ["720", "1935", "2000 Réis", "MBC", "Qunatidade de peças cunhadas 2.131.000", "R$ 45,00"],
                     ["721", "1936", "5000 Réis", "MBC", "Qunatidade de peças cunhadas 1.986.000", "R$ 60,00"],
+                    ["721 A", "1936", "5000 Réis", "MBC", "Palavra Santos duplicada", "R$ 120,00"],
                     ["722", "1937", "5000 Réis", "MBC", "Qunatidade de peças cunhadas 414.000", "R$ 70,00"],
                     ["723", "1938", "5000 Réis", "MBC", "Qunatidade de peças cunhadas 994.000", "R$ 60,00"],
                     ["723A", "1938", "5000 Réis", "MBC", "CARIMBO SOCIEDADE NUMISMÁTICA", "R$ 500,00"],
@@ -543,7 +544,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["137", "2015", "1", "MBC+/SOB", "VELA", "R$ 5,00"],
                     ["138", "2015", "1", "SOB", "PARACANOAGEM", "R$ 5,00"],
                     ["139", "2015", "1", "MBC+/SOB", "RUGBI", "R$ 3,00"],
-                    ["140", "2015", "1", "", "FUTEBOL", "NÃO TENHO"],
+                    ["140", "2015", "1", "FC", "FUTEBOL", "R$ 10,00"],
                     ["141", "2015", "1", "SOB", "VOLEIBOL", "R$ 5,00"],
                     ["142", "2015", "1", "MBC+/SOB", "ATLETISMO PARAOLIMPICO", "R$ 5,00"],
                     ["143", "2015", "1", "SOB", "JUDO", "R$ 5,00"],
@@ -1235,6 +1236,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["321", "1976", "1 Cruzeiro", "MBC", "Qunatidade de peças cunhadas 26.146.000", "R$ 3,50"],
                     ["322", "1977", "1 Cruzeiro", "FC", "Qunatidade de peças cunhadas 98.000", "R$ 120,00"],
                     ["324", "1972", "1 Cruzeiro", "MBC", "Qunatidade de peças cunhadas 19.999.800", "R$ 6,00"],
+                    ["325", "1975", "1 Centavo", "FC", "Qunatidade de peças cunhadas é desconhecida", "R$ 5,00"],
                     ["326", "1976", "1 Centavo", "FC", "Qunatidade de peças cunhadas 112.000", "R$ 60,00"],
                     ["327", "1977", "1 Centavo", "FC", "Qunatidade de peças cunhadas 100.000", "R$ 60,00"],
                     ["330", "1976", "2 Centavo", "FC", "Qunatidade de peças cunhadas 136.000", "R$ 80,00"],
