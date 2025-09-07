@@ -1101,6 +1101,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ["41", "2013", "R$ 0,10", "mbc", "Brasil com a letra 'A' entupida de metal", "R$ 15,00"],
                     ["42", "2013", "R$ 0,10", "mbc", "Palavra centavos com as letras 'V' e 'O' ligadas", "R$ 15,00"],
                     ["43", "2017", "R$ 0,10", "mbc", "Com excesso de metal.", "R$ 15,00"],
+                    ["44", "2018", "R$ 0,10", "mbc", "Com traços no anverso", "R$ 15,00"],
 
                     ["1", "1994", "R$ 0,25", "MBC", "Reverso Inclinado a Esquerda", "R$ 30,00"],
                     ["2", "1999", "R$ 0,25", "MBC", "Reverso Inclinado a Direita", "R$ 30,00"],
